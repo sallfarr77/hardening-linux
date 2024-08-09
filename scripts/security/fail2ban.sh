@@ -1,7 +1,5 @@
 #!/bin/bash
-# scripts/security/fail2ban.sh
 
-# Install Fail2Ban
 apt-get install -y fail2ban
 
 # Create local configuration if not exists
@@ -27,7 +25,6 @@ bantime = 600
 action = iptables[name=HTTP, port=http, protocol=tcp]
 EOT
 
-# Restart Fail2Ban
 systemctl restart fail2ban
 
 echo "Fail2Ban installed and configured."

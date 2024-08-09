@@ -1,10 +1,7 @@
 #!/bin/bash
-# scripts/security/logging.sh
 
-# Install auditd if not installed
 apt-get install -y auditd audispd-plugins
 
-# Enable and start the auditd service
 systemctl enable auditd
 systemctl start auditd
 
@@ -26,7 +23,6 @@ cat <<EOT >> /etc/audit/audit.rules
 -w /var/log/btmp -p wa -k session
 EOT
 
-# Restart auditd
 systemctl restart auditd
 
 echo "Logging and auditing configured."

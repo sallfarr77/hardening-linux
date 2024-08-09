@@ -1,7 +1,5 @@
 #!/bin/bash
-# scripts/system/unattended-upgrades.sh
 
-# Install unattended-upgrades if not installed
 apt-get install -y unattended-upgrades apt-listchanges
 
 # Enable unattended upgrades

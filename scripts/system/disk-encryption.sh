@@ -1,5 +1,4 @@
 #!/bin/bash
-# scripts/security/disk-encryption.sh
 
 # This script assumes the use of LUKS for disk encryption and is meant to be
 # a reference. Adapting disk encryption requires interactive setup which cannot

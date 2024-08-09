@@ -17,10 +17,10 @@ bash ./scripts/security/users.sh
 bash ./scripts/system/file-permissions.sh
 
 # Install and configure Fail2Ban
-bash ../scripts/security/fail2ban.sh
+bash ./scripts/security/fail2ban.sh
 
 # Configure logging and auditing
-bash ../scripts/security/logging.sh
+bash ./scripts/security/logging.sh
 
 # Install and configure unattended upgrades
 bash ./scripts/system/unattended-upgrades.sh

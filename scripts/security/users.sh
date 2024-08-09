@@ -1,5 +1,4 @@
 #!/bin/bash
-# scripts/security/users.sh
 
 # Ensure password expiration for all accounts
 awk -F: '{ print $1 }' /etc/passwd | while read -r user 
