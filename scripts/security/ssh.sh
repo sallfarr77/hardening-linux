@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Backup existing SSH config
+# Backup existing SSH 
+mkdir ./backups
 cp /etc/ssh/sshd_config ./backups/sshd_config.bak
 
 # Disable root login and password authentication
@@ -10,6 +11,6 @@ sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_
 # Specify a custom SSH port
 sed -i 's/#Port 22/Port 2222/' /etc/ssh/sshd_config
 
-systemctl restart sshd
+systemctl restart ssh
 
 echo "SSH configuration hardened."

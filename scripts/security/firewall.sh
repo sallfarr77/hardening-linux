@@ -6,7 +6,7 @@ ufw default deny incoming
 ufw default allow outgoing
 
 # Allow SSH, HTTP, and HTTPS
-ufw allow ssh
+ufw allow 2222/tcp
 ufw allow http
 ufw allow https
 
